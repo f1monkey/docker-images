@@ -11,7 +11,7 @@ Basic `docker-compose.yml` example:
 ```yaml
 services:
     php:
-        image: cyradin/php-roadrunner:latest
+        image: cyradin/php-roadrunner:7.4-latest
         environment:
             DEV_MODE: 1 # 1 - start "dev" server which uses .rr.dev.yaml, 0 - start "prod" server
         restart: always
@@ -22,7 +22,7 @@ services:
 ```yaml
 services:
     php:
-        image: cyradin/php-roadrunner:latest
+        image: cyradin/php-roadrunner:7.4-latest
         environment:
             DEV_MODE: 1 # 1 - start "dev" server which uses .rr.dev.yaml, 0 - start "prod" server
             WAIT_FOR_HOST: postgres # url or docker container name to check for availability
